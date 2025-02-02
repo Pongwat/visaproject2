@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.creator {
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+
+ul  {
+    display: flex;
+    justify-content: center; 
+}
+
+ul li  {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+}
+
+.apply-form {
+    background-color: #ffffff;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+    position: absolute;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(108, 178, 249);
+    border: none;
+    padding: 15px 32px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input {
+    width:100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .apply-form {width: 40%;}
+}
+
+</style>
+<body>
+
+<div class="form-systems">
+    <ul>
+        <li><img src="images/dopa-logo2.png" alt="logo"></li>
+        <li><h3>Salary, wages, and pension systems <br> Treasury Division, Department of Provincial Administration</h3></li>
+    </ul>
+    <div class="creator">
+        <h4>Created by Pongwat</h4>
+    </div> 
+    <div class="apply-form">
+        <form>
+            
+            <h3>Apply for membership</h3>
+            <lebel for="Membership type">Membership type</lebel><br>
+            <select id="Membership type" name="Membership type">
+                <option value="central">Central</option>
+                <option value="province">Province</option>
+                <option value="district">District</option>
+                <option value="pensioner">Pensioner</option>
+
+            </select> 
+            <h4>personal information</h4>
+            <lebel for="Identification number">Identification number</lebel><br>
+            <input type="text" id="idnumber" name="idnumber" value=""><br><br>
+
+            <lebel for="Name - Surname">Name - Surname</lebel><br>
+            <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
+
+            <lebel for="Name - Surname">Position</lebel><br>
+            <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
+
+            <lebel for="Name - Surname">Contact number</lebel><br>
+            <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
+
+            <lebel for="password">password</lebel><br>
+            <input type="text" id="password" name="Name-Surname" value=""><br><br>
+
+            <lebel for="password">Confirm password</lebel><br>
+            <input type="text" id="password2" name="Name-Surname" value=""><br><br>
+            <button class="button">Sign up</button><br><br>
+        </form>
+    </div>
+</div> 
+
+<div class="creator">
+    <h4>Created by Pongwat</h4>
+</div>  
+
+</body>
+</html>
