@@ -86,7 +86,7 @@ input {
         <h4>Created by Pongwat</h4>
     </div> 
     <div class="apply-form">
-        <form>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
             
             <h3>Apply for membership</h3>
             <lebel for="Membership type">Membership type</lebel><br>
@@ -105,16 +105,16 @@ input {
             <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
 
             <lebel for="Name - Surname">Position</lebel><br>
-            <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
+            <input type="text" id="Name-Surname" name="Position" value=""><br><br>
 
             <lebel for="Name - Surname">Contact number</lebel><br>
-            <input type="text" id="Name-Surname" name="Name-Surname" value=""><br><br>
+            <input type="text" id="Name-Surname" name="Contact-number" value=""><br><br>
 
             <lebel for="password">password</lebel><br>
-            <input type="text" id="password" name="Name-Surname" value=""><br><br>
+            <input type="text" id="password" name="password" value=""><br><br>
 
             <lebel for="password">Confirm password</lebel><br>
-            <input type="text" id="password2" name="Name-Surname" value=""><br><br>
+            <input type="text" id="password2" name="Confirm-password" value=""><br><br>
             <button class="button">Sign up</button><br><br>
         </form>
     </div>
@@ -123,6 +123,47 @@ input {
 <div class="creator">
     <h4>Created by Pongwat</h4>
 </div>  
+
+<script>
+    function validateForm() {
+      let a = document.forms["myForm"]["idnumber"].value;
+      if (a == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      
+      let b = document.forms["myForm"]["Name-Surname"].value;
+      if (b == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let c = document.forms["myForm"]["Position"].value;
+      if (c == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let d = document.forms["myForm"]["Contact-number"].value;
+      if (d == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let e = document.forms["myForm"]["password"].value;
+      if (e == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let f = document.forms["myForm"]["Confirm-password"].value;
+      if (f == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      
+    }
+    </script>
 
 </body>
 </html>
